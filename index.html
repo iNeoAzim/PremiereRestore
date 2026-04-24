@@ -40,13 +40,18 @@ backdrop-filter: blur(12px);
 border-bottom: 1px solid rgba(201,168,76,0.25);
 }
 .nav-logo {
-font-family: ‘Playfair Display’, serif;
-font-size: 1.3rem;
-font-weight: 700;
-color: var(--cream);
-letter-spacing: 0.02em;
+display: flex;
+align-items: center;
+text-decoration: none;
 }
-.nav-logo span { color: var(--gold); }
+.nav-logo img {
+height: 2.8rem;
+object-fit: contain;
+mix-blend-mode: screen;
+opacity: 0.92;
+transition: opacity 0.25s;
+}
+.nav-logo img:hover { opacity: 1; }
 .nav-links {
 display: flex; gap: 2.5rem; list-style: none;
 }
@@ -712,12 +717,15 @@ gap: 1rem;
 border-top: 1px solid rgba(201,168,76,0.15);
 }
 .footer-logo {
-font-family: ‘Playfair Display’, serif;
-font-size: 1.1rem;
-color: var(--cream);
-font-weight: 700;
+display: flex;
+align-items: center;
 }
-.footer-logo span { color: var(--gold); }
+.footer-logo img {
+height: 2.2rem;
+object-fit: contain;
+mix-blend-mode: screen;
+opacity: 0.88;
+}
 .footer-copy {
 font-size: 0.78rem;
 color: rgba(245,240,232,0.35);
@@ -774,7 +782,7 @@ padding: 4rem 2rem;
 <!-- NAV -->
 
 <nav>
-  <div class="nav-logo">Premier <span>Restore</span> LLC</div>
+  <a href="#" class="nav-logo"><img src="EE560613-DD8F-4DAE-9634-14D023AEC059.png" alt="Premier Restore LLC"></a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
@@ -873,7 +881,7 @@ padding: 4rem 2rem;
 
 <section id="about">
   <div class="about-img-wrap reveal">
-    <div class="about-img-bg" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80');"></div>
+    <div class="about-img-bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80');"></div>
     <div class="about-accent"></div>
     <div class="about-tag">Premier<br>Quality</div>
   </div>
@@ -1075,7 +1083,7 @@ padding: 4rem 2rem;
 <!-- FOOTER -->
 
 <footer>
-  <div class="footer-logo">Premier <span>Restore</span> LLC</div>
+  <div class="footer-logo"><img src="EE560613-DD8F-4DAE-9634-14D023AEC059.png" alt="Premier Restore LLC"></div>
   <p class="footer-copy">© 2026 Premier Restore LLC. All rights reserved.</p>
   <ul class="footer-links">
     <li><a href="#services">Services</a></li>
